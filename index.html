@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music Player Lucu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="player">
+      <!-- MUSIC 1 -->
+      <div class="music active music1" id="music1">
+        <div class="image">
+          <img src="/assets/jaehyun.jpg" alt="Cover Lagu" id="cover" />
+        </div>
+        <h2 class="judul-lagu" id="judulLagu">Indahnya Dirimu</h2>
+        <p class="penyanyi" id="penyanyi">HIVI</p>
+        <audio id="audio" class="audio" src="./assets/indahnyadirimu.mp3"></audio>
+        <div class="progress-container " id="progressContainer">
+          <div class="progress-bar " id="progressBar"></div>
+        </div>
+        <div class="tombol">
+          <i class="bi bi-rewind-circle prevBtn" id="prevBtn"></i>
+          <button class="playBtn" id="playBtn"><i class="bi bi-play"></i></button>
+          <i class="bi bi-fast-forward-circle nextBtn" id="nextBtn"></i>
+        </div>
+      </div>
+
+      <!-- MUSIC 2 -->
+      <div class="music music2" id="music2">
+        <div class="image image2">
+          <img src="/assets/jeno.jpg" alt="Cover Lagu" id="cover" />
+        </div>
+        <h2 class="judul-lagu" id="judulLagu">Satu-Satunya</h2>
+        <p class="penyanyi " id="penyanyi">HIVI</p>
+        <audio id="audio" class="audio" src="./assets/satusatunya.mp3"></audio>
+        <div class="progress-container " id="progressContainer">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="tombol">
+          <i class="bi bi-rewind-circle prevBtn" id="prevBtn"></i>
+          <button class="playBtn " id="playBtn"><i class="bi bi-play"></i></button>
+          <i class="bi bi-fast-forward-circle nextBtn" id="nextBtn"></i>
+        </div>
+      </div>
+
+      <!-- MUSIC 3 -->
+      <div class="music music3" id="music3">
+        <div class="image image3">
+          <img src="/assets/taeyong.jpg" alt="Cover Lagu" id="cover" />
+        </div>
+        <h2 class="judul-lagu" id="judulLagu">Nuansa Bening</h2>
+        <p class="penyanyi" id="penyanyi">Vidi Aldiano</p>
+        <audio id="audio" class="audio" src="./assets/nuansabening.mp3"></audio>
+        <div class="progress-container" id="progressContainer">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="tombol">
+          <i class="bi bi-rewind-circle prevBtn" id="prevBtn"></i>
+          <button class="playBtn" id="playBtn"><i class="bi bi-play"></i></button>
+          <i class="bi bi-fast-forward-circle nextBtn" id="nextBtn"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- MUSIC 4 -->
+      <div class="music music4" id="music4">
+        <div class="image image4">
+          <img src="/assets/haechan.jpg" alt="Cover Lagu" id="cover" />
+        </div>
+        <h2 class="judul-lagu" id="judulLagu">Wanitaku</h2>
+        <p class="penyanyi" id="penyanyi">Noah</p>
+        <audio id="audio" class="audio" src="./assets/wanitaku.mp3"></audio>
+        <div class="progress-container" id="progressContainer">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="tombol">
+          <i class="bi bi-rewind-circle prevBtn" id="prevBtn"></i>
+          <button class="playBtn" id="playBtn"><i class="bi bi-play"></i></button>
+          <i class="bi bi-fast-forward-circle nextBtn" id="nextBtn"></i>
+        </div>
+      </div>
+    </div>
+
+      <!-- MUSIC 5 -->
+      <div class="music music5" id="music5">
+        <div class="image image5">
+          <img src="/assets/jaemin.jpg" alt="Cover Lagu" id="cover" />
+        </div>
+        <h2 class="judul-lagu" id="judulLagu">Lebih Indah</h2>
+        <p class="penyanyi" id="penyanyi">Adera</p>
+        <audio id="audio" class="audio" src="./assets/lebihindah.mp3"></audio>
+        <div class="progress-container" id="progressContainer">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="tombol">
+          <i class="bi bi-rewind-circle prevBtn" id="prevBtn"></i>
+          <button class="playBtn" id="playBtn"><i class="bi bi-play"></i></button>
+          <i class="bi bi-fast-forward-circle nextBtn" id="nextBtn"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

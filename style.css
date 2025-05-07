@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url('./assets/bacground.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+
+.music {
+  display: none;
+}
+.music.active {
+  display: block;
+}
+
+.player {
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.music,
+.music2,
+.music3,
+.music4,
+.music5 {
+  /* Shared styles for all music elements */
+  width: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: #ffe0e0;
+  border: 2px solid #ff1493;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ff1493;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.judul-lagu {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff1493;
+}
+
+.penyanyi {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #a52a2a;
+  font-style: italic;
+}
+
+.progress-container {
+  position: relative;
+  background: #ffc0cb;
+  width: 100%;
+  height: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: #ff1493;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.playBtn {
+  background-color: #ff70a6;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.playBtn:hover {
+  background-color: #ff3f7e;
+}
+
+.prevBtn,
+.nextBtn {
+  font-size: 30px;
+  color: #ff1493;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  color: #ff69b4;
+  transform: scale(1.2);
+}
